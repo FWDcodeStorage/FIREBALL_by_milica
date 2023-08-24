@@ -177,8 +177,7 @@ const Search = () => {
           {openFilter && 
                    
                    <div onClick={stopPropagation} className="w-[50vw] z-10 absolute left-[-100%] rounded-2xl bg-slate-50 px-[16px] py-[15px] flex flex-col gap-[1rem]">
-                   {/* <div className="absolute right-2 text-sm font-semibold hover:text-gray-500"
-                   onClick={()=>setOpenFilter(false)}>Close</div> */}
+                  
                  <h4 className="text-md text-gray-600 font-semibold">Filter by Year</h4>
                    <div className="px-[6px] flex gap-[1rem]">
                      <div className="flex gap-[.5rem]">
@@ -198,9 +197,19 @@ const Search = () => {
                      <div>
                        <input type="number" className=" text-center border-black border-2 rounded-xl h-[2rem] w-[5rem]"/>
                      </div>
+                     <div className="flex gap-3">
                      <div
                      onClick={handleApplyFilter} 
                      className="cursor-pointer text-center py-1 px-3 border-black border-2 rounded-xl h-[2rem] w-[5rem] bg-black text-white text-sm font-semibold">Apply</div>
+                       <div className="absolute right-2 text-sm font-semibold hover:text-gray-500"
+                   onClick={()=>{
+                    setFromYear(''); 
+                    setToYear('');
+                    setFilteredData(data);
+                    setOpenFilter(false)
+                    }}>Remove filters</div>
+                     </div>
+                     
                  </div>}
  
         </div>
