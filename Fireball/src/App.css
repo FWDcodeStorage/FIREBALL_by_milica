@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+}
+.content { 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .table table {
+    
+        content-visibility: auto;
+        contain-intrinsic-size: 1px 5000px;
+     
+}
+.table table th {
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 300px;
+}
+.table table td{
+    width: 300px;
+    text-align: center;
+} */
+.isdzTY {
+    background-color: #ffffff30 !important;
+    color: #ffffff !important;
+}
+.fKJrIg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    /* background-color: #ffffff70; */
+}
+.hwVeUK svg{
+    fill: #ffffff;
+}
