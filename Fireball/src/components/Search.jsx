@@ -161,7 +161,7 @@ const Search = () => {
         <div className="flex items-center justify-center relative">
         <input
           type='text'
-          className='w-[300px] px-[15px] py-[6px] text-black font-light rounded-xl relative'
+          className='w-[300px] px-[15px] py-[6px] text-black font-light rounded-xl outline-none relative'
           placeholder='Search'
           onChange={handleFilter}
         />
